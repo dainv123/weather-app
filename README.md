@@ -34,6 +34,9 @@ yarn serve
 
 # 3. Build for production with minification
 yarn build
+
+# 4. Run unit test with Jest
+yarn test:unit
 ```
 
 ![export](https://i.imgur.com/xEpTyGo.png)
