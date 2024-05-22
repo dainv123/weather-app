@@ -1,10 +1,6 @@
 ## Features
 Displays weather information
 
-## Note
-Please run application with node version 16.*, ex: 16.13.0
-and edit 
-
 ## Project Structure
 The project is structured as follows:
 - src - Contains the application source code
