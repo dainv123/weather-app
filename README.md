@@ -15,11 +15,12 @@ The project is organized as follows:
         - weather-data.ts: Schema for weather data.
     - services/: Contains services for application logic.
         - weather-service.ts: Service for fetching weather data.
-    - tests/: Contains unit tests for application components.
     - Additional Files:
         - message.ts: File likely containing messaging constants or translations.
         - config.ts: Configuration file for the application.
-        ...
+        - ...
+- tests/: Contains unit tests for application components.
+- ...
 
 
 ## Getting started
