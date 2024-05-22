@@ -1,0 +1,10 @@
+@import '../../assets/css/variables';
+@import '../../assets/css/mixins';
+
+.error-message {
+  p {
+    color: $error-color;
+    font-size: $font-size-large;
+    @include text-center;
+  }
+}

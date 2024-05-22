@@ -1,0 +1,55 @@
+@import '../../assets/css/variables';
+@import '../../assets/css/mixins';
+
+.weather-info {
+	margin: 0 auto;
+	@include flex-center;
+	flex-direction: column;
+	text-align: center;
+	padding: $padding-base;
+	border-radius: 8px;
+	@include box-shadow($shadow-color, 0.1);
+	background-color: #ffffff;
+	width: 100%;
+	@include responsive-width(300px, 500px);
+	@include transition(all);
+
+	.city-name {
+		font-size: $font-size-large;
+		font-weight: bold;
+		margin-bottom: $padding-small;
+		color: $text-color;
+		@include transition(color);
+	}
+
+	.temperature {
+		font-size: 2rem;
+		color: $primary-color;
+		margin-bottom: $padding-small;
+		@include transition(color);
+	}
+
+	.description {
+		font-size: $font-size-base;
+		color: $secondary-color;
+		margin-bottom: $padding-base;
+		@include transition(color);
+	}
+
+	.icon {
+		width: 80px;
+		height: 80px;
+		@include transition(all);
+	}
+
+	&:hover {
+		@include box-shadow($shadow-color, 0.2);
+		transform: scale(1.05);
+
+		.city-name,
+		.temperature,
+		.description {
+			color: darken($primary-color, 10%);
+		}
+	}
+}

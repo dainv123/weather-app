@@ -1,0 +1,10 @@
+@import './variables';
+@import './mixins';
+
+#app {
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $primary-text-color;
+}

@@ -1,0 +1,30 @@
+@import '../../assets/css/variables';
+@import '../../assets/css/mixins';
+
+.search-input {
+	@include flex-center;
+	margin-bottom: 20px;
+
+	input {
+		padding: $padding-base;
+		font-size: $font-size-base;
+		border: 1px solid $border-color;
+		border-radius: $border-radius-base;
+		margin-right: 10px;
+		flex: 1;
+	}
+
+	button {
+		padding: $padding-base 20px;
+		font-size: $font-size-base;
+		border: none;
+		border-radius: $border-radius-base;
+		background-color: $primary-color;
+		color: white;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $primary-color-hover;
+		}
+	}
+}

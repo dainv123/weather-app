@@ -1,0 +1,27 @@
+@import '../../assets/css/variables';
+@import '../../assets/css/mixins';
+
+.weather-app {
+  @include flex-center;
+  flex-direction: column;
+  padding: 20px;
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  min-height: calc(100vh - 128px);
+
+  h1 {
+    font-size: $font-size-large;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+
+  .weather-info,
+  .search-input,
+  .error-message {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    @include responsive(width, 90%, 100%);
+  }
+}
