@@ -8,7 +8,7 @@ The project is organized as follows:
         - error-message/: Component for displaying error messages.
         - loading-spinner/: Component for displaying a loading spinner.
         - search-input/: Component for search functionality.
-        - weather-component/: Renders weather data.
+        - weather-component/: Main component.
         - weather-info/: Displays weather information.
     - models/: Contains data models.
         - unit.ts: Definitions for units used in the application.
